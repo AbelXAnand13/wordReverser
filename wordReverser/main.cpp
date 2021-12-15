@@ -1,14 +1,22 @@
-//
-//  main.cpp
-//  wordReverser
-//
-//  Created by Abel Christy Anand on 12/14/21.
-//
-
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+void reverse(string str)
+{
+    for (long i = str.size(); i>=0; i--){
+      cout << str[i];
+    }
 }
+
+int main(void)
+{
+    string text;
+    cout << "Enter text to be reversed\n";
+        while( getline( cin, text ) ) {
+            reverse(text);
+            break;
+        }
+}
+
+
